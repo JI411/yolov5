@@ -14,7 +14,7 @@ from numpy.typing import NDArray
 from tqdm import tqdm
 
 
-def get_bbox(annots: List[Dict[str, int]]) -> List[list[int]]:
+def get_bbox(annots: List[Dict[str, int]]) -> List[List[int]]:
     """
     Transform [{'x': 525, 'y': 196, 'width': 63, 'height': 51}, ...] to [[525, 196, 63, 51], ...]
 
