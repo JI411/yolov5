@@ -5,7 +5,7 @@ Create yolov5 dataset to "TensorFlow - Help Protect the Great Barrier Reef" comp
 
 import ast
 from pathlib import Path
-from typing import Tuple
+from typing import Tuple, List, Dict
 
 import cv2
 import numpy as np
@@ -14,7 +14,7 @@ from numpy.typing import NDArray
 from tqdm import tqdm
 
 
-def get_bbox(annots: list[dict[str, int]]) -> list[list[int]]:
+def get_bbox(annots: List[Dict[str, int]]) -> List[list[int]]:
     """
     Transform [{'x': 525, 'y': 196, 'width': 63, 'height': 51}, ...] to [[525, 196, 63, 51], ...]
 
